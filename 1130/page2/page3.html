@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3</title>
+    <link rel="stylesheet" href="../p2.css?v=1">
+    <style>
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .image-slider-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 40%; /* 调整为页面宽度的80% */
+            margin: 15px 0; /* 减小间距 */
+        }
+
+        .image-slider-container img {
+            width: 20%; /* 图片宽度减小 */
+            height: auto;
+        }
+
+        .image-slider-container input[type=range] {
+            width: 50%; /* 滑动条宽度减小 */
+        }
+    </style>
+</head>
+<body>
+    <div class="header-buttons">
+        <a href="http://127.0.0.1:3000/index.html" class="button">Home</a>
+        <button class="button">About</button>
+        <button class="button">Music</button>
+
+
+        <div class="fixed-bottom-button">
+                <a href="page3.html" class="button">OK</a>
+        </div>
+
+    <div class="content-container">
+        <div class="image-slider-container">
+            <img src="a.png" alt="Image A">
+            <input type="range" min="1" max="10" value="5">
+        </div>
+        <div class="image-slider-container">
+            <img src="s.png" alt="Image S">
+            <input type="range" min="1" max="10" value="5">
+        </div>
+        <div class="image-slider-container">
+            <img src="h.png" alt="Image H">
+            <input type="range" min="1" max="10" value="5">
+        </div>
+        <div class="image-slider-container">
+            <img src="c.png" alt="Image C">
+            <input type="range" min="1" max="10" value="5">
+        </div>
+        <div class="image-slider-container">
+            <img src="e.png" alt="Image E">
+            <input type="range" min="1" max="10" value="5">
+        </div>
+    </div>
+    
+</body>
+</html>
